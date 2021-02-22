@@ -13,10 +13,10 @@ class Main {
   static boolean concert(String name, int capacity)
   {
    if (capacity == 5){
-     System.out.println("You are allowed in the concert!");
+     System.out.println("Yay! You are allowed in the concert!");
      return true;
    }else{
-     System.out.println("The concert is at full capacity! Maybe next time.");
+     System.out.println("Sorry,the concert is at full capacity! Maybe next time.");
      return false; 
    }
   }
