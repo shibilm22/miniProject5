@@ -5,15 +5,16 @@ class Main {
     Scanner scan = new Scanner(System.in);
     System.out.println("Welcome to Shibil's concert. What is your name? " );
     String name = scan.next(); 
-    int capacity = 5;
-    concert(name, capacity);
+    int capacity = 15;
+    concert(capacity, numPpl);
   
   }
 
-  static boolean concert(String name, int capacity)
+  static boolean concert(int numPpl, int capacity)
   {
-   if (capacity == 5){
-     System.out.println("Yay! You are allowed in the concert!");
+   if (capacity > 0 ){
+     System.out.println("More room in concert. How many of you are joining?");
+     capacity = capacity - numPpl;
      return true;
    }else{
      System.out.println("Sorry,the concert is at full capacity! Maybe next time.");
